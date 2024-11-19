@@ -57,4 +57,4 @@ def convert_file():
         return jsonify({'error': 'Kesalahan dalam memproses file'}), 400
 
 if __name__ == '__main__':
-    app.run(debug=True , port=6000)
+    app.run(debug=True ,host='0.0.0.0', port=6000)
