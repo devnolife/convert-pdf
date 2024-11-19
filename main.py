@@ -5,6 +5,10 @@ import requests
 
 app = Flask(__name__)
 
+@app.route('/')
+def index():
+    return 'generate pdf by devnolife'
+
 @app.route('/convert', methods=['POST'])
 def convert_file():
     if 'file' not in request.files:
